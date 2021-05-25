@@ -17,7 +17,7 @@ app.set('layout','layouts/layout');
 app.use(expressLayouts);
 app.use(express.static('public'));
 
-
+//! database url have to be changed by mongo atlas
 mongoose.connect(process.env.DATABASE_URL,{
     useNewUrlParser:true,
 })
